@@ -1,0 +1,34 @@
+.main{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  /*align-content: center;*/
+}
+.item{
+  margin-right: 120px;
+}
+a {
+  text-decoration: none;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 0;
+  padding: 0;
+}
+h4 {
+  position: relative;
+}
+.module {
+  padding: 20px;
+  text-align: center;
+  color: #eee;
+  max-height: 120px;
+  min-width: 120px;
+  background-color: #2aa4d2;
+  border-radius: 2px;
+}
+.module:hover {
+  background-color: #eee;
+  cursor: pointer;
+  color: #f1fff6;
+}

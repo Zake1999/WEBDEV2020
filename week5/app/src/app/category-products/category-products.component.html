@@ -1,0 +1,13 @@
+<h2>{{category.name}}</h2>
+<div class="grid grid-pad">
+  <button (click)="back()">Back</button>
+  <a *ngFor="let product of category.products, let i = index"
+     routerLink="/categories/{{category.id-1}}/products/{{product.id}}">
+    <div class="module hero">
+      <h2>{{i+1}}. {{product.name}}</h2>
+      <img src="{{product.link}}">
+      <h3>Rating : {{product.rating}}</h3>
+    </div>
+  </a>
+  <hr>
+</div>
