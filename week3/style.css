@@ -1,0 +1,105 @@
+body{
+	*box-sizing: border-box;
+	margin:0;
+	margin-top: -19px;
+}
+.topbar{
+	background-color: black;
+	width: 100%;
+	height: 60px;
+}
+#title{
+	color: white;
+	padding-left: 5%;
+	padding-top: 1.5%;
+}
+.content{
+	width: 100%;
+	height: 500px;
+}
+.emp{
+	height: 500px;
+	width: 20%;
+	float: left;
+}
+.items{
+	float: left;
+	width: 60%;
+}
+.form_div{
+	padding-left: 50px;
+}
+.form_div input[type="text"]{
+	outline: none;
+	width: 80%;
+	height: 20px;
+	border-radius: 4px;
+	border-width: 1px;
+}
+.form_div input[type="button"]{
+	margin-left: 30px;
+	height: 28px;
+	background-color: #4076bd;
+	outline: none;
+	color: white;
+}
+#todolist input[type="checkbox"]{
+	float: left;
+}
+#todolist input[type="checkbox"]:checked{
+	background-color:#000;
+    border-left-color:#06F;
+    border-right-color:#06F;
+}
+#todolist{
+	border: 0.5px solid grey;
+    border-radius: 5px;
+	width: 100%;
+}
+#todolist div{
+	border-bottom: 0.5px solid black;
+	width: 93.5%;
+	height: 25px;
+	border-color: grey;
+	border-width: 0.5px;
+	padding: 25px;
+}
+#item_text{
+	text-decoration: none;
+	margin-left: 20px;
+	margin-top: 1px;
+	float: left;
+	width: 90%;
+}
+#delete{
+	float: right;
+	background-image: url("img/photo.jpg");
+	background-size: 20px;
+	width: 25px;
+	height: 25px;
+	outline: none;
+}
+#added{
+	border: 1px solid black;
+	width: 100%;
+	height: 35px;
+	border-color: grey;
+	border-width: 2px;
+	padding: 25px;
+}
+#delete_all_btn{
+	margin-left: 40%;
+	margin-top: 10px;
+	width: 80px;
+	height: 50px;
+	outline: none;
+	border-radius: 6px;
+}
+#delete_all_btn:hover{
+	background-color: green;
+	color: white;
+}
+#delete_all_btn:focus{
+	background-color: red;
+	color: white;
+}

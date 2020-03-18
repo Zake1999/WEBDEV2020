@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+<head>
+	<title>ToDo List</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+	<div class="topbar">
+		<h3 id="title">ToDo List</h3>
+	</div>
+	<div class="content">
+		<br>
+		<div class="emp"></div>
+		<div class="items">
+			<h2>ToDo List</h2>
+			<div class="form_div">
+				<input id="in_todo" type="text" name="todoitem" required placeholder="New task" >
+				<input type="button" name="delete" id="add" value="Add" onclick="addToDoElement()">
+			</div>
+			<br><br>
+			<div id="todolist">
+				
+			</div>
+			<button id="delete_all_btn" onclick="deleteall()">Delete</button>
+		</div>
+	</div>
+</body>
+</html>

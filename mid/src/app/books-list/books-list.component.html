@@ -1,0 +1,15 @@
+
+<div class="body">
+
+  <div class="prod" *ngFor="let book of books">
+
+
+ <span>ID: {{book.id}}</span>
+    <a routerLink="/book-detail/{{book.id}}">
+      <span>
+        {{ book.title }}
+      </span>
+    </a>
+    <input type="checkbox" name="is_favourite" value={{book.is_favourite}}>
+  </div>
+</div>
