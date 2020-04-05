@@ -1,0 +1,14 @@
+
+<button (click)="goBack()">go back</button>
+    <div *ngIf="product ">
+      <div>
+        <h3>
+          <a [title]="product.name">
+            {{ product.name }}
+          </a>
+        </h3>
+        <img src="{{product.link}}">
+        <p >{{product.rating}}</p>
+      </div>
+    </div>
+

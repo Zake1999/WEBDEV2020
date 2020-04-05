@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +16,9 @@ import { BannerComponent } from './banner/banner.component';
     HeaderComponent,
     routingComponents,
     BannerComponent,
+    ProductDetailComponent,
+    ProductListComponent,
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,
