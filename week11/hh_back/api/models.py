@@ -7,6 +7,9 @@ class Company(models.Model):
     city = models.CharField(max_length=200)
     address = models.TextField(default='', blank=True)
 
+    class Meta:
+        verbose_name = 'Category'
+        verbose_name_plural = 'Categories'
 
     def to_json(self):
         return {
@@ -15,12 +18,10 @@ class Company(models.Model):
             'description': self.description,
             'city': self.city,
             'address': self.address,
-            }
-
+        }
 
     def __str__(self):
         return self.name
-
 
 
 class Vacancy(models.Model):
@@ -28,7 +29,6 @@ class Vacancy(models.Model):
     description = models.TextField(default='', blank=True)
     salary = models.FloatField()
     company = models.ForeignKey(Company, on_delete=models.CASCADE, blank=True, null=True)
-
 
     def to_json(self):
         return {
@@ -38,7 +38,6 @@ class Vacancy(models.Model):
             'salary': self.salary,
             'company': self.company.name,
         }
-
 
     def __str__(self):
         return self.name
